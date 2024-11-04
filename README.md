@@ -1,7 +1,7 @@
-## Goal of this project is to built a match trading engine in three different languages with concurrent programming, namely:
-1. C++ (Threads and Locks)
-2. Golang (Goroutines and Channels)
-3. Rust (Async Programming with Tokio)
+## Goal of this project is to practice parallel and concurrent programming with different concurrency paradigms, following NUS CS3211 module.
+1. C++ (Threads and Locks) to implement a Matching Engine
+2. Golang (Goroutines and Channels) to implement a Matching Engine
+3. Rust (Async Programming with Tokio) to implement async programming when dealing with CPU and I/O intensive tasks.
 
 ## Definition of a Matching engine
 A matching engine is a component that allows the matching of buy and sell orders inside an exchange. When an exchange receives a new order, it is considered ‘active’, and it will first try to match the active order against existing orders, called ‘resting’ orders. In case the exchange cannot match the active order against any resting orders, it will store the active order in an order book, so that it can potentially match it later. When an order is added to the order book, it is no longer considered ‘active’ and is now considered ‘resting’.
